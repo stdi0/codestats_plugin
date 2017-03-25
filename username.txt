@@ -1,2 +1,2 @@
-admin
-joo0shaij
+username
+password
