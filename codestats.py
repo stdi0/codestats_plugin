@@ -17,7 +17,6 @@ class CodestatsEvent(sublime_plugin.EventListener):
             thread = CodestatsApiCall(self.count)
             thread.start()
             self.count = 0
-        print(self.count)
 
 class CodestatsApiCall(threading.Thread):
     def __init__(self, count):
@@ -28,7 +27,6 @@ class CodestatsApiCall(threading.Thread):
         path = os.path.dirname(__file__)
         path = re.sub("codestats.py", '', path)
         path = path + "/username.txt"
-        print(path)
         try:
             f = open(path)
             line = f.readlines()
@@ -36,7 +34,6 @@ class CodestatsApiCall(threading.Thread):
             password = re.sub("^\s+|\n|\r|\s+$", '', line[1])
         except:
             sublime.error_message('Username file error.')
-        #print(username + 'test')
         try:
             data = urllib.parse.urlencode({'count': self.count, 'password': password}).encode()
             request = urllib.request.Request('http://codestats.pythonanywhere.com/' + username + '/api_call/', data=data)
