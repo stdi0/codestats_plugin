@@ -1,5 +1,6 @@
 # Codestats
 Codestats это плагин, который посчитает сколько символов в день вы вводите в своем любимом редакторе SublimeText.
+
 ![Speed](http://www.myiconfinder.com/uploads/iconsets/256-256-f120d8c549f62d043ca09bc39136d486-dashboard.png)
 
 # Установка
