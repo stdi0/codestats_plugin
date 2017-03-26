@@ -15,3 +15,4 @@ Codestats это плагин, который посчитает сколько 
 
 Ура, плагин работает, отслеживайте свою статистику на [сodestats.pythonanywhere.com](http://codestats.pythonanywhere.com)
 
+![Speed](http://www.myiconfinder.com/uploads/iconsets/256-256-f120d8c549f62d043ca09bc39136d486-dashboard.png)
