@@ -6,9 +6,7 @@ import urllib.parse
 import os
 import re
 
-
 class CodestatsEvent(sublime_plugin.EventListener):
-
     count = 0
 
     def on_modified(self, view):
