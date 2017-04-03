@@ -33,10 +33,11 @@ class CodestatsApiCall(threading.Thread):
             username = re.sub("^\s+|\n|\r|\s+$", '', line[0])
             password = re.sub("^\s+|\n|\r|\s+$", '', line[1])
         except:
-            sublime.error_message('Username file error.')
+            sublime.error_message('Codestats: username file error.')
         try:
             data = urllib.parse.urlencode({'count': self.count, 'password': password}).encode()
             request = urllib.request.Request('http://codestats.pythonanywhere.com/' + username + '/api_call/', data=data)
             resp = urllib.request.urlopen(request)
         except:
-            sublime.error_message('Connection error.')
+            #sublime.error_message('Codestats: connection error.')
+            pass
