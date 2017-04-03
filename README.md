@@ -11,7 +11,10 @@ Codestats это плагин, который посчитает сколько 
 1. Скачайте .zip архив с плагином с GitHub по [ссылке](https://github.com/stdi0/codestats_plugin/archive/master.zip)
 2. Распакуйте плагин и переменуйте папку в ```Codestats```
 3. Скопируйте папку в директорию с плагинами вашего Sublime Text. Например, для OS X в ```~/Library/Application Support/Sublime Text 3/Packages/``` Для Windows: ```%APPDATA%\Sublime Text 3\Packages```
-4. В папке с плагином найдите и откройте файл ```username.txt``` в нем замените ```username``` и ```password``` на те, что указали при регистрации.
+4. В папке с плагином найдите и откройте файл ```username.txt``` в нем на первой строчке укажите свой логин, на второй строчке - пароль(те, что указали при регистрации).
+Пример файла:
+```username
+password```
 
 Запустите Sublime Text.
 
